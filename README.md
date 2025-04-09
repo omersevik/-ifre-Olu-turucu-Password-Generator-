@@ -15,4 +15,4 @@ Projeyi yerel olarak çalıştırmak için:
 
 1. Projeyi klonlayın:
    ```bash
-   git clone https://github.com/kullaniciadi/sifre-olusturucu.git
+   git clone https://github.com/omersevik/Sifre-Olusturucu-Password-Generator.git
