@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güçlü Şifre Oluşturucu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Güçlü Şifre Oluşturucu</h1>
+
+        <div class="result-container">
+            <span id="password">Şifreniz burada görünecek</span>
+            <button class="copy-btn" id="copy">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="strength-meter" id="strength-meter"></div>
+        <p class="strength-text" id="strength-text">Şifre gücü: Henüz şifre oluşturulmadı</p>
+
+        <div class="settings">
+            <div class="length-container">
+                <label>Şifre Uzunluğu</label>
+                <div class="length-input">
+                    <input type="range" id="length" min="1" max="64" value="12">
+                    <input type="number" id="length-number" min="6" max="30" value="12">
+                </div>
+            </div>
+
+            <div class="setting">
+                <label>Büyük Harfler (A-Z)</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="setting">
+                <label>Küçük Harfler (a-z)</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="setting">
+                <label>Sayılar (0-9)</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+
+            <div class="setting">
+                <label>Özel Karakterler (!@#$%^&*)</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+
+            <div class="setting">
+                <label>Benzer Karakterleri Hariç Tut (i, l, 1, L, o, 0, O)</label>
+                <input type="checkbox" id="exclude-similar">
+            </div>
+
+            <button class="generate-btn" id="generate">Şifre Oluştur</button>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">Şifre kopyalandı!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
